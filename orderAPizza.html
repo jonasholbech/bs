@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/main.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
+
+    <![endif]-->
+    <style>
+        .row div {
+            /*background-color:cornflowerblue;*/
+        }
+        h1 {font-size:2em;}
+
+        body {
+            position: relative;
+        }
+
+        input, textarea, select {
+            display:block;
+        }
+        input[type=radio] {
+            display:inline-block;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1>Hello, world!</h1>
+
+
+
+
+
+<div class="container mainContent">
+    <div class="row">
+        <div class="col-xs-12">
+
+            <form action="#" method="get">
+                <label>First name
+                    <input type="text" pattern="[a-z]{4}" name="firstname" value="JH" required>
+                </label>
+                <label>Your new password
+                <input type="password" name="password">
+                </label>
+
+                <label>Yes
+                    <input type="radio" name="delivery">
+                </label>
+                <label>No
+                    <input type="radio" name="delivery">
+                </label>
+                <label>Do you accept out TOS?
+                <input type="checkbox" name="tos">
+                </label>
+                <label>A photo?
+                <input type="file" name="photo">
+                </label>
+
+                <input type="hidden" name="camefrom" value="facebook">
+
+                <label>Personal info
+                <textarea name="personalinfo" cols="40" rows="5">hello world</textarea>
+                </label>
+                <label>Country
+                <select name="country">
+                    <option value="dk">Denmark</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="us">USA</option>
+                    <option value="de">Germany</option>
+
+                </select>
+                </label>
+                <h2>What color pizza would you like?</h2>
+                <input type="color" name="color">
+
+                <h2>email</h2>
+                <input type="email" name="email">
+
+                <h2>When do you need delivery?</h2>
+                <input type="date" name="delivery">
+
+                <h2>Your age</h2>
+                <input type="number" name="age" min="1" max="20">
+                <input type="submit">
+            </form>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+<footer id="contact">
+    <address>lygten 16</address>
+
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
